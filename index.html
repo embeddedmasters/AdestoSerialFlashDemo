@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Adesto Serial Flash Demo by embeddedmasters</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Adesto Serial Flash Demo</h1>
+        <h2>Adesto Serial Flash Demo using the EFM32 Leopard Gecko Starter Kit and Embedded Masters &#39;EMSENSR-WSP&#39; with Embedded Masters &#39;EMMEM&#39; Adesto Breakout boards.  The EMMEM-ATxxxx breakout boards are plugged into the EMBLOCK2/SPI socket.  The EMBLOCK2 socket supports all Embedded Masters SPI based Breakout boards.  This project makes use of the Silicon Labs Simplicity Studio IDE.</h2>
+        <a href="https://github.com/embeddedmasters/AdestoSerialFlashDemo" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <p><img src="https://www.embeddedmasters.com/Images/logo.png" alt=""></p>
+
+<p>This page is for the Adesto Serial Flash Demo.  It was created for the Adesto Technologies Inc Serial Flash and Resistive Memory products by Embedded Masters LLC.  It makes use of the Embedded Masters EMSENSR-WSP board that connects to the Silicon Labs EFM32/EFR32 Starter Kits that have the 20pin expansion header.  It allows for user to easily prototype their systems by making use of the Embedded Masters EMSENSR(Sensor breakout boards) and EMMEM(Memory Breakout boards).  The EMSENSR-WSP provides 4 I2C Blocks to plug in I2C based EMSENSR's(sensors) and 1 SPI block to plug in SPI based EMMEM or EMSENSR based products.  The EMSENSR-WSP has a companion board that is not required for the Adesto Serial Flash Demo that provides BTLE capability and is the EMRF-WSB(Wireless Sensor Base).  </p>
+
+<p>The Adesto Serial Flash Demo provides direct examples of using the Adesto Serial Flash Devices and provides a starting point for others to be able to use the Adesto Serial Memory drivers on other platforms.  Using the Energy Profiler provided in Simplicity Studio users can directly measure the current consumption of the Adesto Serial Memory Devices.  The Energy Profiler is a graphical tool that allows users to see the Power Consumption on a scrolling graph.  It measures the Power Consumption consumed on the VMCU voltage source which powers the EMSENSR-WSP board for this demo.</p>
+
+<p>The demo is configured to make use of the FREE Silicon Labs Simplicity Studio Eclipse based IDE/GCC compiler.  The project directory includes all files that are necessary to compile the project though you will need to install Simplicity Studio and create a new workspace and import this project into the workspace.  </p>
+
+<p>Download for Simplicity Studio:
+<a href="http://www.silabs.com/products/mcu/Pages/simplicity-studio.aspx">http://www.silabs.com/products/mcu/Pages/simplicity-studio.aspx</a></p>
+
+<p>EMSENSR-WSP: <a href="https://www.embeddedmasters.com/WSEP/">https://www.embeddedmasters.com/WSEP/</a>  </p>
+
+<h2>
+<a id="emmemadesto-breakout-boards" class="anchor" href="#emmemadesto-breakout-boards" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>EMMEM/Adesto Breakout Boards:</h2>
+
+<p><strong>EMMEM-AT25SF041</strong>: <a href="https://www.embeddedmasters.com/ProductDetail/EMMEMAT25SF041-Embedded-Masters/592484/">EMMEM-AT25SF041</a><br>
+<strong>EMMEM-AT25XE021</strong>: <a href="https://www.embeddedmasters.com/ProductDetail/EMMEMAT25XE021A-Embedded-Masters/571354/">https://www.embeddedmasters.com/ProductDetail/EMMEMAT25XE021A-Embedded-Masters/571354/</a><br>
+<strong>EMMEM-AT25XE041</strong>:  COMING SOON!!<br>
+<strong>EMMEM-AT45DB081</strong>: <a href="https://www.embeddedmasters.com/ProductDetail/EMMEMAT45DB081-Embedded-Masters/583411/">https://www.embeddedmasters.com/ProductDetail/EMMEMAT45DB081-Embedded-Masters/583411/</a><br>
+<strong>EMMEM-AT45DB641</strong>:  <a href="https://www.embeddedmasters.com/ProductDetail/EMMEMAT45DB641-Embedded-Masters/583410/">https://www.embeddedmasters.com/ProductDetail/EMMEMAT45DB641-Embedded-Masters/583410/</a></p>
+
+<h3>
+<a id="project-directory-structure" class="anchor" href="#project-directory-structure" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Project Directory Structure:</h3>
+
+<p><strong>.settings</strong> -&gt; Project Settings for use with Eclipse/Simplicity Studio IDE<br>
+<strong>BSP</strong> -&gt; This folder contains the source file for the Trace capability which can be used with the Energy Profiler.<br>
+<strong>CMSIS</strong> -&gt;  This folder contains the the Leopard Gecko startup files.<br>
+<strong>Docs</strong> -&gt; This folder contains PDF's of the Quick Start Guide and the Porting Guide.<br>
+<strong>Drivers</strong> -&gt;  This folder contains the EFM32 Driver files for capacitive sensing, RTC, LCD, etc.<br>
+<strong>emlib</strong> -&gt; This folder contains EFM32 library files/drivers for various pieces of functionality.<br>
+<strong>src</strong> -&gt; This folder contains the source code for the demo itself.  </p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/embeddedmasters/AdestoSerialFlashDemo/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/embeddedmasters/AdestoSerialFlashDemo/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/embeddedmasters/AdestoSerialFlashDemo"></a> is maintained by <a href="https://github.com/embeddedmasters">embeddedmasters</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
